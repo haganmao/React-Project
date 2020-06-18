@@ -1,15 +1,17 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Greet from './components/Greet'
+import Welcome from './components/Welcome'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Hello React!
-          I am learning you very quickly!!!
+          I need UP! 
         </p>
         <a
           className="App-link"
@@ -19,7 +21,11 @@ function App() {
         >
           Learn React
         </a>
-      </header>
+      </header> */}
+    <Greet />
+    <hr/>
+
+    <Welcome /> 
     </div>
   );
 }
