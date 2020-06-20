@@ -1,9 +1,12 @@
 import React from 'react'
 import { Component } from 'react'
 
+
+
+//use this key word to access parameters in react class
 class Welcome extends Component {
-    render() {
-        return <h1 > Hello this is my firt class Compenent! </h1>
+    render(props) {
+        return <h1 > Welcome! {this.props.name} {this.props.age} {this.props.id} </h1>
     }
 }
 
