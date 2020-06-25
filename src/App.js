@@ -3,29 +3,47 @@ import logo from './logo.svg';
 import './App.css';
 import Greet from './components/Greet'
 import Welcome from './components/Welcome'
+import Hr1 from './components/helloReact'
+import Message from './components/Message'
+import Counter from './components/Counter'
+import FirstReact from './components/FirstReact'
+import LoginP from './components/LoginPage'
+import Cart from './components/cart'
 
 function App() {
   return (
     <div className="App">
-      {/* <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Hello React!
-          I need UP! 
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header> */}
-    <Greet />
-    <hr/>
+      
+     
+      <FirstReact name='Mao' age='18' work='student' id='001'>
+        <button>Delete</button>
+      </FirstReact>
+      <FirstReact name='Gao' age='20' work='teacher' id='002'/>
+      <FirstReact name='Wang' age='29' work='programmer' id='003'/>
 
-    <Welcome /> 
+
+      <LoginP />
+      <hr/>
+      <Cart  />
+      <hr/>
+    
+      
+
+      {/* <hr/>
+      <Greet />
+      <hr />  
+      <Welcome name='MAO' age='18' id='001' />
+      <Welcome name='GAO' age='16' id='002' />
+      <Welcome name='WANG' age='22' id='003' />
+
+      <Hr name='MAO' age='18' id='001'>
+        <p>This is children props</p>
+      </Hr>
+      <Hr name='GAO' age='16' id='002' />
+      <Hr name='WANG' age='22' id='003' />
+
+      <hr /> */}
+
     </div>
   );
 }
